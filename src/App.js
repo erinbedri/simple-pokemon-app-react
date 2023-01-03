@@ -19,7 +19,7 @@ function App() {
         setLoading(false)
         setNextPageUrl(res.data.next)
         setPreviousPageUrl(res.data.previous)
-        setPokemon(res.data.results.map(p => p.name))
+        setPokemon(res.data.results.map(p => p))
     })
 
     return () => cancel()
